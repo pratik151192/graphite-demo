@@ -6,7 +6,6 @@ const TaskAndUserSearch = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-
   useEffect(() => {
     setLoading(true);
     fetch(`/search?query=${encodeURIComponent(searchQuery)}`)
@@ -65,3 +64,4 @@ const TaskAndUserSearch = () => {
 };
 
 export default TaskAndUserSearch;
+export default TaskSearch;
