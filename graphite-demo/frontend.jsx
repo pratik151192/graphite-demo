@@ -6,7 +6,8 @@ const TaskAndUserSearch = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-  useEffect(() => {
+  const name = "pratik" 
+ useEffect(() => {
     setLoading(true);
     fetch(`/search?query=${encodeURIComponent(searchQuery)}`)
       .then(response => {
